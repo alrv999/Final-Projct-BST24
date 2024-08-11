@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Formulir Pendataan Pasien</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+
+        <div
+          class="progress-step progress-step-active"
+          data-title="Nama"
+        ></div>
+        <div class="progress-step" data-title="Data Diri"></div>
+        <div class="progress-step" data-title="Nomor ID"></div>
+        <div class="progress-step" data-title="Persetujuan"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="Nama">Nama Lengkap sesuai KTP</label>
+          <input type="text" name="nama" id="nama" />
+        </div>
+        <div class="input-group">
+          <label for="username">Buat Username Baru</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="input-group">
+          <label for="Password">Buat Password Baru</label>
+          <input type="password" name="Password" id="Password" />
+        </div>
+        <div class="btns-group flex-end">
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="tempat">Tempat Lahir</label>
+          <input type="text" name="tempat lahir" id="tempat lahir" />
+        </div>
+        <div class="input-group">
+          <label for="dob">Tanggal Lahir</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div class="input-group">
+          <label for="address">Alamat</label>
+          <input type="text" name="address" id="address" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="NIK">Nomor NIK</label>
+          <input type="number" name="NIK" id="NIK" />
+        </div>
+        <div class="input-group">
+          <label for="nomor KK">Nomor Kartu Keluarga</label>
+          <input type="number" name="nomor KK" id="nomor KK" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="agreement">Dengan ini saya menyetujui semua ketentuan dan saya taat kepada peraturan dan kebijakan rumah sakit ini.</label>
+          <input type="checkbox" name="agreement" id="agreement" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
